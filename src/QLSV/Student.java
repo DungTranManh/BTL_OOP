@@ -82,7 +82,13 @@ public class Student extends Person {
             } 
         }
     }
-
+    @Override
+    public void showInfor() {
+        // TODO Auto-generated method stub
+        super.showInfor();
+        System.out.println("; MSV: " + msv + "; gpa: " + mark + "; email: " + email );
+        
+    }
     // Phương thức kiểm tra xem học sinh có được học bổng hay không?
     public boolean checkScholarship() {
         if(mark >= 8.0){
